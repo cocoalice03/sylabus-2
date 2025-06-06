@@ -128,6 +128,9 @@ header {
 
 .main-nav a.active {
   color: var(--color-accent);
+  background-color: rgb(30 174 211 / var(--tw-bg-opacity, 1));
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
 }
 
 /* Contenu principal - Ultra simplifié */
