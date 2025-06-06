@@ -98,7 +98,7 @@ header {
 
 /* Navigation - Ultra simplifiée */
 .main-nav {
-  background-color: rgb(30 174 211 / var(--tw-bg-opacity, 1));
+  background-color: #1eaed3;
   padding: var(--spacing-sm) 0;
 }
 
