@@ -1,0 +1,229 @@
+/* Style ultra simplifié pour le site Dry Needling - Fond blanc pur */
+
+/* Variables CSS pour la cohérence des couleurs et des styles */
+:root {
+  /* Palette de couleurs minimaliste */
+  --color-primary: #26B6D4; /* Bleu turquoise du site de référence */
+  --color-secondary: #0A8FA8; /* Bleu turquoise foncé du site de référence */
+  --color-accent: #BEFF00; /* Vert lime du site de référence */
+  --color-text: #000000; /* Texte noir sur fond blanc */
+  --color-background: #FFFFFF; /* Fond blanc pur */
+  
+  /* Typographie simplifiée */
+  --font-primary: 'Arial', sans-serif;
+  
+  /* Espacement */
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+}
+
+/* Reset et styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+/* Typographie ultra simplifiée */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: var(--spacing-lg);
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: var(--spacing-lg);
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: var(--spacing-md);
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout ultra simplifié */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.section {
+  padding: var(--spacing-md) 0;
+}
+
+/* Header - Minimaliste */
+header {
+  background-color: var(--color-primary);
+  padding: var(--spacing-sm) 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-background);
+  text-transform: uppercase;
+}
+
+/* Navigation - Ultra simplifiée */
+.main-nav {
+  background-color: var(--color-secondary);
+  padding: var(--spacing-sm) 0;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-nav li {
+  margin: 0 var(--spacing-sm);
+}
+
+.main-nav a {
+  font-weight: 500;
+  color: var(--color-background);
+  position: relative;
+}
+
+/* Ajout de la numérotation comme sur le site de référence */
+.main-nav a::before {
+  content: attr(data-number) "/ ";
+  font-weight: bold;
+  color: var(--color-accent);
+}
+
+/* Contenu principal - Ultra simplifié */
+.main-content {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md) 0;
+}
+
+/* Tableaux simplifiés */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--spacing-lg);
+  margin-top: var(--spacing-sm);
+}
+
+th, td {
+  padding: var(--spacing-sm);
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+
+/* Listes simplifiées */
+ul, ol {
+  margin-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer ultra simplifié */
+footer {
+  background-color: var(--color-secondary);
+  color: var(--color-background);
+  padding: var(--spacing-sm) 0;
+  text-align: center;
+  margin-top: var(--spacing-lg);
+}
+
+/* Responsive Design ultra simplifié */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-nav li {
+    margin: 0.25rem 0;
+  }
+  
+  table {
+    font-size: 0.9rem;
+  }
+  
+  th, td {
+    padding: 0.5rem;
+  }
+}
+
+/* Accessibilité préservée */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
