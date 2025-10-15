@@ -1,3 +1,5 @@
 {
-  "public": "version_simple"
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/version_simple/$1" }
+  ]
 }
