@@ -1,0 +1,14 @@
+[general]
+host = "0.0.0.0"
+port = 5000
+root = "./version_simple"
+directory-listing = false
+log-level = "info"
+log-remote-address = false
+
+[advanced]
+compression = true
+compression-static = true
+
+[files]
+index = ["index.html"]
